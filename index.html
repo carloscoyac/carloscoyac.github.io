@@ -768,8 +768,8 @@
 
                     </div>
 
-                   <form method="POST" action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" class="contact__form grid">
-                    <input type="hidden" name="send_to" value="carlos56.rgd@gmail.com">
+                   <form action="https://formsubmit.co/carlos56.rgd@gmail.com" method="POST" class="contact__form grid">
+
                         <div class="contact__content">
                             <label for="" class="contact__label">Name</label>
                             <input name="name"  type="text" class="contact__input">
@@ -777,7 +777,7 @@
                         
                         <div class="contact__content">
                             <label for="" class="contact__label">Email</label>
-                            <input name="email" type="email" class="contact__input">
+                            <input name="email" type="email" class="contact__input" required>
                         </div>
                        
                         <div class="contact__content">
@@ -790,6 +790,8 @@
                             <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
                         </div>
 
+                        <input type="hidden" name="_next" value="https://carloscoyac.github.io/#">
+                        <input type="hidden" name="_subject" value="Nuevo mensaje de Portafolio">
                         <div>
 
                             <button type="submit" class="button-form">
@@ -845,8 +847,6 @@
 
         <!--==================== SWIPER JS ====================-->
         <script src="assets/js/swiper-bundle.min.js"></script>
-        <!--==================== FORM JS ====================-->
-        <script src="js/forms.js"></script>
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
     </body>
